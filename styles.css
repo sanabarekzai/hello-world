@@ -92,13 +92,13 @@ a {
 
 :root {
   /* Color palette — prefers-color-scheme aware */
-  --color-bg: #ffffff;
+  --color-bg: #ffe4ec;            /* light pink page background */
   --color-fg: #1a1a1a;
   --color-muted: #5b6470;
   --color-accent: #2563eb;
   --color-accent-hover: #1d4ed8;
-  --color-surface: #f6f8fa;
-  --color-border: #d1d9e0;
+  --color-surface: #fff5f8;       /* slightly lighter pink for cards */
+  --color-border: #f3c9d4;
 
   --color-bg-dark: #0f1115;
   --color-fg-dark: #e6edf3;
