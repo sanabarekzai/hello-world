@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sana Barekzai</title>
     <style>
         body {
-            background-color: pink;
+            background-color: #FFD1DC; /* Light pink background */
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Sana Barekzai</h1>
-    <p>Born: March 28, 2011</p>
+    <p>Date of Birth: <a href="https://www.website.com/">March 28, 2011</a></p>
 </body>
 </html>
