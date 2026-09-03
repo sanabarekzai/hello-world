@@ -11,10 +11,16 @@
             text-align: center;
             padding: 20px;
         }
+        img {
+            max-width: 300px; /* Adjust size as needed */
+            border-radius: 10px; /* Optional: rounded corners */
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Sana Barekzai</h1>
+    <img src="images/cat-picture.jpg" alt="Cat Picture">
     <p>Date of Birth: <a href="https://www.website.com/">March 28, 2011</a></p>
 </body>
 </html>
