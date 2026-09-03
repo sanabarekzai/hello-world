@@ -1,10 +1,11 @@
 # Running the project
 
-This is a static HTML project. Start the Replit web workflow to serve the project
-on port 5000:
+This is a static HTML project. Start the Replit web workflow to serve the main
+`myfirstweb` page on port 5000:
 
 ```bash
-python3 -m http.server 5000 --bind 0.0.0.0
+python3 -c 'import http.server; Base=http.server.SimpleHTTPRequestHandler; Handler=type("Handler",(Base,),{"do_GET":lambda self: (setattr(self,"path","/myfirstweb"), Base.do_GET(self))[1] if self.path.split("?",1)[0]=="/" else Base.do_GET(self)}); Handler.extensions_map[""]="text/html"; http.server.ThreadingHTTPServer(("0.0.0.0",5000),Handler).serve_forever()'
 ```
 
-The imported `Sana Barekzai` page can be opened at `/Sana%20Barekzai`.
+The main `myfirstweb` HTML page is served at `/` and can also be opened directly
+at `/myfirstweb`.

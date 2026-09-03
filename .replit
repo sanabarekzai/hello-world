@@ -1,4 +1,4 @@
-modules = ["web"]
+modules = ["web", "python-base-3.13"]
 
 [nix]
 channel = "stable-25_05"
@@ -22,13 +22,13 @@ args = "Start application"
 name = "Start application"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python3 -m http.server 5000 --bind 0.0.0.0"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 -c 'import http.server; Base=http.server.SimpleHTTPRequestHandler; Handler=type(\"Handler\",(Base,),{\"do_GET\":lambda self: (setattr(self,\"path\",\"/myfirstweb\"), Base.do_GET(self))[1] if self.path.split(\"?\",1)[0]==\"/\" else Base.do_GET(self)}); Handler.extensions_map[\"\"]=\"text/html\"; http.server.ThreadingHTTPServer((\"0.0.0.0\",5000),Handler).serve_forever()'"
+waitForPort = 5000
 
 [[ports]]
 localPort = 5000
