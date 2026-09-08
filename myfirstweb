@@ -11,10 +11,24 @@
             text-align: center;
             padding: 20px;
         }
+        .cat-images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .cat-images img {
+            width: 150px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Sana Barekzai</h1>
     <p>My birthday is <a href="https://news.google.com/home?hl=en-US&gl=US&ceid=US:en">March 28, 2011</a></p>
+    <div class="cat-images">
+        <img src="https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg" alt="Cats">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/A-Cat.jpg/3840px-A-Cat.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Cat">
+    </div>
 </body>
 </html>
